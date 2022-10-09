@@ -36,3 +36,11 @@
 ### 6 Oct 2022
 * *2 hours* Looking into Colab set up
 * *0.5 hours* Adding project template from Moodle to repo
+
+### 8 Oct 2022
+* *0.5 hours* Meeting 2 with the supervisor
+* *0.5 hours* Changing to GitHub and Linking Overleaf to GitHub
+
+### 9 Oct 2022
+* *1 hour* Notes from meeting 2, whole year plan update
+* *3 hours* Implementing PIPs demo in Colab
