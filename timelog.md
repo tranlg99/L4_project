@@ -46,3 +46,19 @@
 ### 9 Oct 2022
 * *1 hour* Notes from meeting 2, whole year plan update
 * *4 hours* Implementing PIPs demo in Colab
+
+## Week 3
+
+### 12 Oct 2022
+* *1 hour* Making notes from Particle Video Revisited paper
+* *1 hour* Understanding their code base
+* *1 hour* Looking into different datasets
+
+### 13 Oct 2022
+* *3 hours* Feeding a shorter driving video to the model
+
+### 15 Oct 2022
+
+### 16 Oct 2022
+
+## Week 4
