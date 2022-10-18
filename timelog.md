@@ -57,8 +57,12 @@
 ### 13 Oct 2022
 * *3 hours* Feeding a shorter driving video to the model
 
-### 15 Oct 2022
+### 14 Oct 2022
+* *0.5 hours* Meeting 3 with the supervisor
 
-### 16 Oct 2022
+### 15 Oct 2022
+* *0.5 hours* Notes from meeting 3
 
 ## Week 4
+### 18 Oct 2022
+* *1 hour* Research: [Intro to DL](https://www.youtube.com/watch?v=7sB052Pz0sQ&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
