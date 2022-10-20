@@ -66,3 +66,6 @@
 ## Week 4
 ### 18 Oct 2022
 * *1 hour* Research: [Intro to DL](https://www.youtube.com/watch?v=7sB052Pz0sQ&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+
+### 20 Oct 2022
+* *3 hours* Understanding output and inputs of PIPs model
