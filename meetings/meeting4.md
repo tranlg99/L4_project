@@ -1,7 +1,7 @@
 ## Notes ##
 ### Work done last week
-* understand the input and output of their PIPs model
-* trying to feed it shorter videos (20 frames and with pixel that do not leave the shot)
+* understand the input and output of the PIPs model
+* trying to feed it shorter videos (20 frames and with pixel that do not leave the shot) and few frames from DAVIS and KITTI datasets
 * started research in DL: MIT's introductory course on deep learning methods
 
 After implementing PIPs model in Google Colab, I have tried shorter frames (20 frames) which the model will put into shorter sequences (8 frames in the demo code). The model is less confused and tracks the pixels well, especially the ones that keep being in the frame.
@@ -21,7 +21,7 @@ After implementing PIPs model in Google Colab, I have tried shorter frames (20 f
 
 2. __What is the best structure to store the trajectories?__ 
 
-  * The model outputs trajectories for each given tracking point. For example, if we feed it a 8 frame video with 256 tracking points, the model will output a tensor of shape (1,8,256,2).
+  * The model outputs trajectories for each given tracking point. For example, if we feed it a 8 frame video with 256 tracking points, the model will output a tensor of shape `(1,8,256,2)`.
 
 3. __What would be the ideal number of frames in a video to track a point on?__
 
