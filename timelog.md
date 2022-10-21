@@ -72,4 +72,5 @@
 * *1 hour* Downloading DAVIS and KITTI datasets
 
 ### 21 Oct 2022
-* *1 hour* Trying to feed the model different videos (20 frame driving video, 80 frame bear video and bmx trees video)
+* *1 hour* Trying to feed the model different videos (20 frame driving video, 80 frame breakdancing video)
+* *1 hour* Meeting 4 with the supervisor, making notes
