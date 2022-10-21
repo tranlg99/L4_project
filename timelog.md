@@ -69,3 +69,7 @@
 
 ### 20 Oct 2022
 * *3 hours* Understanding output and inputs of PIPs model
+* *1 hour* Downloading DAVIS and KITTI datasets
+
+### 21 Oct 2022
+* *1 hour* Trying to feed the model different videos (20 frame driving video, 80 frame bear video and bmx trees video)
