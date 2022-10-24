@@ -74,3 +74,12 @@
 ### 21 Oct 2022
 * *1 hour* Trying to feed the model different videos (20 frame driving video, 80 frame breakdancing video)
 * *1 hour* Meeting 4 with the supervisor, making notes
+
+### 22 Oct 2022
+* *1 hour* Looking into Youtube 8M and Kinetics dataset
+* *1 hour* Converting short horse show from YT video into jpg frames and feeding it to the model
+
+## Week 5
+### 24 Oct 2022
+* *1 hour* Converting short taichi video from YT into jpg frames and feeding it to the model
+* *1 hour* Creating a series of outputs on different kinds of videos
