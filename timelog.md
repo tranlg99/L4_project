@@ -83,3 +83,6 @@
 ### 24 Oct 2022
 * *1 hour* Converting short taichi video from YT into jpg frames and feeding it to the model
 * *1 hour* Creating a series of outputs on different kinds of videos
+
+### 25 Oct 2022
+* *2 hour* Creating a series of outputs on different kinds of videos, different rate of frames per second, number of tracking points
