@@ -85,4 +85,7 @@
 * *1 hour* Creating a series of outputs on different kinds of videos
 
 ### 25 Oct 2022
-* *2 hour* Creating a series of outputs on different kinds of videos, different rate of frames per second, number of tracking points
+* *2 hours* Creating a series of outputs on different kinds of videos, different rate of frames per second, number of tracking points, sending results to Paul
+
+### 27 Oct 2022
+* *2 hours* Downloading 150 of Tai chi videos from Youtube 8M dataset using code from https://github.com/gsssrao/youtube-8m-videos-frames
