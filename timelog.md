@@ -13,11 +13,9 @@
 * Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
 
 ## Week 1
-
 * Project bidding 
 
 ## Week 2
-
 ### 30 Sep 2022
 
 * *1 hour* Read the abstract, introduction and conclusion of Particle Video Revisited: Tracking Through Occlusions Using Point Trajectories paper
@@ -31,7 +29,6 @@
 * *1 hour* Reading paper Particle Video Revisited: Tracking Through Occlusions Using Point Trajectories (Section 3: PIPs), identifying further relevant research papers
 
 ## Week 3
-
 ### 5 Oct 2022
 * *1 hour* Finishing reading Particle Video Revisited, familiarising with their [code base](https://github.com/aharley/pips)
 
@@ -47,8 +44,7 @@
 * *1 hour* Notes from meeting 2, whole year plan update
 * *4 hours* Implementing PIPs demo in Colab
 
-## Week 3
-
+## Week 4
 ### 12 Oct 2022
 * *1 hour* Making notes from Particle Video Revisited paper
 * *1 hour* Understanding their code base
@@ -63,7 +59,7 @@
 ### 15 Oct 2022
 * *0.5 hours* Notes from meeting 3
 
-## Week 4
+## Week 5
 ### 18 Oct 2022
 * *1 hour* Research: [Intro to DL](https://www.youtube.com/watch?v=7sB052Pz0sQ&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
 
@@ -79,7 +75,7 @@
 * *1 hour* Looking into Youtube 8M and Kinetics dataset
 * *1 hour* Converting short horse show from YT video into jpg frames and feeding it to the model
 
-## Week 5
+## Week 6
 ### 24 Oct 2022
 * *1 hour* Converting short taichi video from YT into jpg frames and feeding it to the model
 * *1 hour* Creating a series of outputs on different kinds of videos
@@ -89,3 +85,12 @@
 
 ### 27 Oct 2022
 * *2 hours* Downloading 150 of Tai chi videos from Youtube 8M dataset using code from https://github.com/gsssrao/youtube-8m-videos-frames
+
+### 28 Oct 2022
+* *1 hour* Supervisor meeting and making notes
+
+### 30 Oct 2022
+* *3 hours* Research into [CNNs](https://www.youtube.com/watch?v=uapdILWYTzE&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=3) and [Semantic Segmenation models](https://www.jeremyjordan.me/semantic-segmentation/)
+
+## Week 7
+### 31 Oct 2022
