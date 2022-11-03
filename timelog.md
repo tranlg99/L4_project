@@ -93,4 +93,8 @@
 * *3 hours* Research into [CNNs](https://www.youtube.com/watch?v=uapdILWYTzE&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=3) and [Semantic Segmenation models](https://www.jeremyjordan.me/semantic-segmentation/)
 
 ## Week 7
-### 31 Oct 2022
+### 2 Nov 2022
+* *0.5 hours* Creating a seperate google drive account for the data
+
+### 3 Nov 2022
+* *2 hours* Creating pipeline for video to frames conversion in Colab
