@@ -97,4 +97,9 @@
 * *0.5 hours* Creating a seperate google drive account for the data
 
 ### 3 Nov 2022
-* *2 hours* Creating pipeline for video to frames conversion in Colab
+* *3 hours* Creating pipeline for video to frames conversion in Colab
+
+### 4 Nov 2022
+* *1 hour* Storing frames in Drive
+* *1 hour* Supervisor meeting and making notes
+
