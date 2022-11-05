@@ -36,9 +36,22 @@ I created .jpg frames from the Taichi videos using code from [here](https://gith
 
 __1. What type of CNN for semantics segmentation should I look into, U-Net?__
 
-  * Paul will get back to me
-  * pre-training of data, used alredy pretrained weights and update them to our model
-  * try to run the model
+Paul reccomends torchvision, as it is well-written and implements many standard models. It includes several segmentation models, listed [here](https://pytorch.org/vision/stable/models.html#semantic-segmentation)
+
+
+What to do:
+
+1. create an instance of (e.g.) torchvision.models.segmentation.fcn_resnet50 and tell it to load pretrained weights
+
+2. modify that model slightly, by removing its final layer and replacing with a 2D vector output at each pixel (instead of 20 class logits)
+
+3. 'fine-tune' the model on your data -- i.e. start from the pretrained model, and modify its weights to better solve your task
+
+
+
+torchvision itself has a discussion on how to modify and fine-tune their classification models [here](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html). For segmentation the principle is fairly similar; there is an example by a random github-person [here](https://github.com/msminhas93/DeepLabv3FineTuning), with an accompanying tutorial
+
+For now (i) try to load a pretrained torchvision segmentation model (on colab), and run it on some image; (ii) try to understand what those tutorials on fine-tuning are talking about
 
 
 __2. How many pixels should we track? ?x? grid__ 
