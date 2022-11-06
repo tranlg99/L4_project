@@ -16,25 +16,29 @@ __Main objectives:__ implement PIPs model in Colab, test on different and longer
 * **Week 2**
   * Initial meeting with supervisor
   * Setting up VCS, reference manager
-  * Research
+  * Research into PIPs
 * **Week 3**
   * Implementing PIPs model in Colab and see if it works on some of their videos
   * Further reserach
 * **Week 4**
-  * Figure out how to run the model on longer dataset, driving dataset
+  * Figure out how to run the model on longer dataset, choose a dataset to work with
+  * Research intro to DL
 * **Week 5**
-  * Look into neural networks, segmentation/optical flow
+  * Research CNNs, semantic segmenation
+  * Download dataset
 * **Week 6**
-  
-* **Week 7**
-  * Adapt existing model to predict next frames' position of targets
-* **Week 8**
+  * Create a pipeline that parses data and stores the outputs which will be used to train the deep neural network (NumPy files of pairs of rgb frame and coordinates tensor)
 
+* **Week 7**
+  * Try exisitng semantic segmentation models
+* **Week 8**
+  * Adapt existing model to predict next frames' position of targets
 * **Week 9**
-  * Rebuild the future frames pixels from the predicted position of targets
+
 * **Week 10**
 * **Week 11 [PROJECT WEEK]**
   * Evaluate the prediction model
+  * Work on status report
 * **Week 12 [PROJECT WEEK]** Status report submitted.
 
 ## Winter break
