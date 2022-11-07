@@ -103,3 +103,9 @@
 * *1 hour* Storing frames in Drive
 * *1 hour* Supervisor meeting and making notes
 
+## Week 7
+### 7 Nov 2022
+* *2 hour* Changing structure of the project to adhere to VCS. Change the main code storage from Colab Drive to Git Hub. When working on python notebooks, navigate to the notebook in Git Hub and then open the notebook in Colab using [this](https://chrome.google.com/webstore/detail/open-in-colab/iogfkhleblhcpcekbiedikdehleodpjo) Google Chrome extension.
+* *2 hour* Changing data download script. Now the full download dataset pipeline can be executed in Colab (downloading videos, generating frames).
+
+
