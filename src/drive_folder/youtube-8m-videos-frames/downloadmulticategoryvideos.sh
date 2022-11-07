@@ -5,7 +5,7 @@ if [ "$#" != "2" ]; then
 fi
 
 while read line
-	echo Hello
+	echo Downloading videos
 	do
 		bash downloadcategoryids.sh $1 "${line}"
 		bash downloadvideos.sh $1 "${line}"
