@@ -1,11 +1,14 @@
-# Readme
+# L4 Project: Source code
 
-Put a brief description of your code here. This should at least describe the file structure.
+Code consists of two folders: `drive_folder` and `colab_notebooks`.
+
+`drive_folder` includes all executables that should be copied into your Google Drive in order to successfully run python notebooks located in the `colab_notebooks` folder.
+
 
 ## Build instructions
 
-**You must** include the instructions necessary to build and deploy this project successfully. If appropriate, also include 
-instructions to run automated tests. 
+Copy `drive_folder` and put it in your Google Drive account.
+Run `.ipynb` files
 
 ### Requirements
 
