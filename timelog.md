@@ -112,3 +112,11 @@
 ### 8 Nov 2022
 * *2 hours* Created pipeline and tried on few frames of a smaller dataset 
 
+### 11 Nov 2022
+* *1 hour* supervisor meeting + preparation for the meeting
+
+## Week 9
+### 15 Nov 2022
+* *3 hours* debugging generate_training data script, still running into cuda out of memory error
+* *0.5 hours* meeting 7 notes
+
