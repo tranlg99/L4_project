@@ -120,6 +120,8 @@
 * *3 hours* debugging generate_training data script, still running into cuda out of memory error
 * *0.5 hours* meeting 7 notes
 
-### 15 Nov 2022
+### 16 Nov 2022
 * *3 hours* solved cuda out of memery error, training data generation pipeline finished, however computation time will be an issue
+* *2 hours* research into segmenation model, loading model in colab with pretrained weights, looking into replacing the final layer
 
+### 17 Nov 2022
