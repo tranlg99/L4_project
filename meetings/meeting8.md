@@ -41,10 +41,10 @@ This is the architecture of the last layer of FCN ResNet 50, it gives output of 
   )
 ```
 Do we replace the whole classifier layer or just classifier[4]?
-In this case, output should be torch.Size([1, number of points to track, 2]).
-So we need to replace th last layer with something like nn.Linear(512, (H,W))??? - will need to tune the weights in this layer.
+In this case, output should be torch.Size([1, N*N, 2]).
+So we need to replace the last layer with something like nn.Linear(input-512, output(1,N*N, 2))??? - will need to tune the weights in this layer.
 or create a whole container like, something like in this [case](https://github.com/msminhas93/DeepLabv3FineTuning):
-
+torch.flatten(x, 1)
 ```
 class DeepLabHead(nn.Sequential):
     def __init__(self, in_channels: int, num_classes: int) -> None:
