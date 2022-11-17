@@ -125,3 +125,5 @@
 * *2 hours* research into segmenation model, loading model in colab with pretrained weights, looking into replacing the final layer
 
 ### 17 Nov 2022
+* *2 hours* running segmenation model on some image
+* *0.5 hours* pre-meeting notes
