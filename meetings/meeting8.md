@@ -2,7 +2,7 @@
 ### Work done last week
 * pipeline for creating training data finished, however there are computation time issues
 * research into semantic segmentation models
-  * load a pretrained torchvision segmentation model (on colab), run it on some image (based on this (tutorial)[https://debuggercafe.com/semantic-segmentation-using-pytorch-fcn-resnet/])
+  * load a pretrained torchvision segmentation model (on colab), run it on some image (based on this [tutorial](https://debuggercafe.com/semantic-segmentation-using-pytorch-fcn-resnet/))
 
 
 
@@ -13,7 +13,7 @@ Splitting and sticking back traj points together doesn't give the same results a
 __Predition model inputs__
 
 Images fed to FCN ResNet50 segmenatation model have to be normalized using `mean = [0.485, 0.456, 0.406]`
- and `std = [0.229, 0.224, 0.225]` - Whenever we use a pre-trained model for evaluation, then we have to use the mean and standard deviation on the dataset that it has been trained on. (does the same apply for fine-tuning?) A single image has the format of `[batch_size x channels x height x width]`.
+ and `std = [0.229, 0.224, 0.225]` - Whenever we use a pre-trained model for evaluation, then we have to use the mean and standard deviation on the dataset that it has been trained on. A single image has the format of `[batch_size x channels x height x width]`.
  
  
 ### Questions
@@ -28,7 +28,7 @@ __1. Generating the training dataset will take a lot of time (~430hrs). How to i
 
 If it's really not practical to convert the whole dataset on colab, we can find some machine in SoCS to run this bit on.
 
-__2. How to replace the last layer of FCN ResNet50?__
+__2. `Replacing the last layer of FCN ResNet50__
 
 This is the architecture of the last layer of FCN ResNet 50, it gives output of shape `torch.Size([1, 21, 850, 1280])`
 ```
@@ -41,10 +41,12 @@ This is the architecture of the last layer of FCN ResNet 50, it gives output of 
   )
 ```
 Do we replace the whole classifier layer or just classifier[4]?
+
 In this case, output should be torch.Size([1, N*N, 2]).
-So we need to replace the last layer with something like nn.Linear(input-512, output(1,N*N, 2))??? - will need to tune the weights in this layer.
-or create a whole container like, something like in this [case](https://github.com/msminhas93/DeepLabv3FineTuning):
-torch.flatten(x, 1)
+So we need to replace the last layer with something like torch.flatten(x, 1)? then nn.Linear(input_size, output_size)? and will need to tune the weights in this layer.
+
+probably create a container like, something like in this [case](https://github.com/msminhas93/DeepLabv3FineTuning), where they replace FCNHead with DeepLabHead:
+
 ```
 class DeepLabHead(nn.Sequential):
     def __init__(self, in_channels: int, num_classes: int) -> None:
@@ -63,4 +65,4 @@ model.classifier = DeepLabHead(2048, outputchannels)
 * investigate the reason for poor computational time (is it PIP computation or reading the files)
 * try to convert the dataset in chunks
 * visualisation of training data
-* work on the prediction model - research on fine-tuning
+* work on the prediction model - replacing the last layer, research on fine-tuning of resulting model
