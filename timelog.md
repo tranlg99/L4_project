@@ -127,3 +127,10 @@
 ### 17 Nov 2022
 * *2 hours* running segmenation model on some image
 * *0.5 hours* pre-meeting notes
+
+### 18 Nov 2022
+* *1 hour* supervisor meeting + making notes
+
+## Week 10
+### 24 Nov 2022
+* *0.5 hours* cheching access to stlinux12 uni server
