@@ -1,9 +1,18 @@
 ## Notes ##
 ### Work done last week
 * check access to stlinux12
+* investigated running times of PIP
 * trying segmentation model on one of our image
 * modifying segmentation model
 * research and implementation of [fine-tuning](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html) (still need to define dataloader, auxilary output)
+
+__Running times__
+It takes 13-15s for to calculate the 8th frame position of 100x100 points divided into 7x~1500points chunks.
+It takes 2-3s to calculate the same thing for 1600 points without dividing the grid.
+-> poor performance does not come from reading/writing files, GPU is utilised
+
+Next step is to decrease the frequency of sampling from the video frames, skip every second one, etc. and create a small training data set (10 videos).
+
 
 __Access to uni servers with GPUs__
 
@@ -45,7 +54,7 @@ __2. Do I use auxilary output for training?__
 
 
 ## Plan ##
-* investigate the reason for poor computational time (is it PIP computation or reading the files)
-* try to convert the dataset in chunks
+* define dataloader
+* get a small training dataset (10 videos)
 * visualisation of training data in a different notebook
-* dataloader
+
