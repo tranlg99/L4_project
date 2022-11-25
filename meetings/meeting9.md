@@ -10,7 +10,7 @@ __Running times__
 
 It takes 13-15s for to calculate the 8th frame position of 100x100 points divided into 7x~1500points chunks.
 It takes 2-3s to calculate the same thing for 1600 points without dividing the grid.
--> poor performance does not come from reading/writing files, GPU is utilised
+-> poor performance does not come from reading/writing files, GPU is utilised.
 
 Next step is to decrease the frequency of sampling from the video frames, skip every second one, etc. and create a small training data set (10 videos).
 
@@ -20,7 +20,8 @@ __Access to uni servers with GPUs__
 
 I have access to stlinux12.
 There might be an issue with lack of space, I have contacted IT services to allocate me more space (classmate was allocated 5G).
-Servers have Python 3.6.8, might be annoying with some packages.
+Servers have Python 3.6.8, might be annoying with some packages -> create conda env and update the python version. 
+Make sure I have access to /scratch directory and create my own one /scratch/linda.
 
 
 
@@ -51,9 +52,10 @@ my_criterion = nn.CrossEntropyLoss()
 
 ### Questions
 __1. I need to create my custom dataset in a way so I can use Dataloader, to make it easier to work with the data. Any tips on this?__
+Read [documentation](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html). Don't pull individual data from Colab. Make a clever mapping.
 
 __2. Do I use auxilary output for training?__
-
+We don't need this output.
 
 
 
@@ -62,4 +64,3 @@ __2. Do I use auxilary output for training?__
 * get a small training dataset (10 videos)
 * visualisation of training data in a different notebook
 * try to train my modified prediction model
-
