@@ -50,14 +50,16 @@ my_criterion = nn.CrossEntropyLoss()
 ```
 
 ### Questions
+__1. I need to create my custom dataset in a way so I can use Dataloader, to make it easier to work with the data. Any tips on this?__
 
 __2. Do I use auxilary output for training?__
 
-__1. I need to create my custom dataset in a way so I can use Dataloader, to make it easier to work with the data. Any tips on this? __
+
 
 
 ## Plan ##
 * define dataloader
 * get a small training dataset (10 videos)
 * visualisation of training data in a different notebook
+* try to train my modified prediction model
 
