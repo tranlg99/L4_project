@@ -133,4 +133,7 @@
 
 ## Week 10
 ### 24 Nov 2022
-* *0.5 hours* cheching access to stlinux12 uni server
+* *0.5 hours* checking access to stlinux12 uni server
+* *3.5 hours* research into fine-tuning, modifying last layer of segmentation model to fit our task, creating training function
+
+### 25 Nov 2022
