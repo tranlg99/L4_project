@@ -7,6 +7,7 @@
 * research and implementation of [fine-tuning](https://pytorch.org/tutorials/beginner/finetuning_torchvision_models_tutorial.html) (still need to define dataloader, auxilary output)
 
 __Running times__
+
 It takes 13-15s for to calculate the 8th frame position of 100x100 points divided into 7x~1500points chunks.
 It takes 2-3s to calculate the same thing for 1600 points without dividing the grid.
 -> poor performance does not come from reading/writing files, GPU is utilised
@@ -14,11 +15,14 @@ It takes 2-3s to calculate the same thing for 1600 points without dividing the g
 Next step is to decrease the frequency of sampling from the video frames, skip every second one, etc. and create a small training data set (10 videos).
 
 
+
 __Access to uni servers with GPUs__
 
 I have access to stlinux12.
 There might be an issue with lack of space, I have contacted IT services to allocate me more space (classmate was allocated 5G).
 Servers have Python 3.6.8, might be annoying with some packages.
+
+
 
 __Modified model & fine-tuning__
 
@@ -47,10 +51,9 @@ my_criterion = nn.CrossEntropyLoss()
 
 ### Questions
 
-__1. I need to define a Dataloader. I think it would be better to resize my training data.__
-
-
 __2. Do I use auxilary output for training?__
+
+__1. I need to create my custom dataset in a way so I can use Dataloader, to make it easier to work with the data. Any tips on this? __
 
 
 ## Plan ##
