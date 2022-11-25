@@ -137,3 +137,4 @@
 * *3.5 hours* research into fine-tuning, modifying last layer of segmentation model to fit our task, creating training function
 
 ### 25 Nov 2022
+* *1 hour* initial research into dataloaders, supervisor meet and making notes
