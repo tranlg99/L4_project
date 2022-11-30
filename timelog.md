@@ -138,3 +138,7 @@
 
 ### 25 Nov 2022
 * *1 hour* initial research into dataloaders, supervisor meet and making notes
+
+## Week 10
+### 30 Nov 2022
+* *1 hour* Tutorial for writing custom datasets [here](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html), thinking about restructuring my dataset
