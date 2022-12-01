@@ -27,20 +27,20 @@ class TaiChiDataset(Dataset):
     def __getitem__(self,idx):
         if torch.is_tensor(idx):
             idx=idx.tolist()
-            sample_id = self.sample_names[idx]
-            image0_path=os.path.join(self.root_dir,"frame0",sample_id)
-            coords_path=os.path.join(self.root_dir,"coords",sample_id)
-            image0=np.load(image0_path)
-            coords= np.load(coords_path)
+        sample_id = self.sample_names[idx]
+        image0_path=os.path.join(self.root_dir,"frame0",sample_id)
+        coords_path=os.path.join(self.root_dir,"coords",sample_id)
+        image0=np.load(image0_path+'.npy')
+        coords= np.load(coords_path+'.npy')
+        sample={'id':sample_id,'image0':image0, 'coords':coords}
 
-            if self.check:
-                image1_path=os.path.join(self.root_dir,"frame1",sample_id)
-                image1=np.load(image1_path)
-                sample={'image0':image0, 'image1':image1, 'coords':coords}
-            else:
-                sample={'image0':image0, 'coords':coords}
+        if self.check:
+            image1_path=os.path.join(self.root_dir,"frame1",sample_id)
+            image1=np.load(image1_path+'.npy')
+            sample={'id':sample_id, 'image0':image0, 'image1':image1, 'coords':coords}
+             
         if self.transform:
-            sample= self.transform(sample)
+            sample = self.transform(sample)
         return sample
 
 class ToTensor(object):
@@ -51,15 +51,17 @@ class ToTensor(object):
     - torch image: C x H x W
     """
     def __call__(self, sample):
-        image0, coords = sample['image0'], sample['coords']
+        sample_id, image0, coords = sample['id'], sample['image0'], sample['coords']
         image0 = image0.transpose((2, 0, 1))
 
-        if len(sample)==3:
+        if len(sample)==4:
             image1 = sample['image1']
             image1 = image1.transpose((2, 0, 1))
-            return {'image0': torch.from_numpy(image0),
+            return {'id': sample_id,
+                    'image0': torch.from_numpy(image0),
                     'image1': torch.from_numpy(image1),
                     'coords': torch.from_numpy(coords)}
         else:
-            return {'image0': torch.from_numpy(image0),
+            return {'id': sample_id,
+                    'image0': torch.from_numpy(image0),
                     'coords': torch.from_numpy(coords)}
