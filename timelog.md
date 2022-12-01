@@ -142,3 +142,9 @@
 ## Week 10
 ### 30 Nov 2022
 * *1 hour* Tutorial for writing custom datasets [here](https://pytorch.org/tutorials/beginner/data_loading_tutorial.html), thinking about restructuring my dataset
+### 1 Dec 2022
+* *2 hours* Creating custom data set loader
+* *2 hours* Restructuring training data set, revisiting generating of training dataset pipeline to fit
+* *1 hour* Log for storing sample ids of already generated samples
+* *3 hours* Testing data loading, generating small training data set
+* *1 hour* Pre-meeting notes
