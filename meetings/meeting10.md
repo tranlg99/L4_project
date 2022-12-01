@@ -29,8 +29,11 @@ training_data
           |--- ... 
 ```
 `sample_ids.txt` serves as a list of sample_ids as well as a log to keep track of what training data I have generated already.
+
 `frame0/` directory stores the first frames of the sequence (training data input)
+
 `frame1/` directory stores the last frames of the sequence (sanity check for generated training data)
+
 `coords/` directory stores the coordinates of pixels in the last frame
 
 
