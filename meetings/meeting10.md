@@ -48,6 +48,6 @@ Not a big problem. Better, store smaller resolution and resize image later, beca
 ## Plan ##
 * revisit number of tracking points (change to 64x64), dataset structure (will need to add visibility data)
 * make other samples, to see the credibility of person moving in frames
-* if all is good then get a small training dataset (of 10 videos)
+* if all is good then get a small training dataset (of 10 videos) + incorporate visibility of the pixel in the training data
 * visualisation of training data in a different notebook
 * fine-tune modified prediction model on this data
