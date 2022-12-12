@@ -148,3 +148,7 @@
 * *1 hour* Log for storing sample ids of already generated samples
 * *3 hours* Testing data loading, generating small training data set
 * *1 hour* Pre-meeting notes
+
+## Week 12
+### 12 Dec 2022
+* *5 hours* Creating more diverse training data for justification of the chosed dataset
