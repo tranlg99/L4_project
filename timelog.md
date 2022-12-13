@@ -152,3 +152,9 @@
 ## Week 12
 ### 12 Dec 2022
 * *5 hours* Creating more diverse training data for justification of the chosed dataset
+
+### 13 Dec 2022
+* *2 hours* Status report draft
+* *2 hours* Looking into other potential datasets
+
+
