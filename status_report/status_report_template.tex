@@ -3,66 +3,81 @@
 \usepackage{times}
     \usepackage{fullpage}
     
-    \title{ {{cookiecutter.project_title}}
-    \author{ {{cookiecutter.student_name}} - {{cookiecutter.student_id}} }
+    \title{3D Particle-Based Video Prediction}
+    \author{Linda Tran - 24721235T }
 
     \begin{document}
     \maketitle
-    
-    
-     
+ 
 
 \section{Status report}
 
 \subsection{Proposal}\label{proposal}
 
 \subsubsection{Motivation}\label{motivation}
-
-\emph{{[}Clearly motivate the purpose of your project; why someone would
-care about what you are doing{]}}
+The task of video frame prediction is of high relevance to many computer vision applications, particularly to robotics or self-driving cars. However, current deep-learning methods rely on high volume of labeled data which is hardly at hand. This project aims to elevate this problem by using a new "particle video" approach for tracking pixels (Persistent Independent Particles - PIPs) to obtain training data, and create a simple prediction model based on the data.
 
 \subsubsection{Aims}\label{aims}
-
-\emph{{[}Clearly state what the project is intended to do. This should
-be something which is measurable; it should be possible to tell if you
-succeeded{]}}
+This project will develop a prediction model that takes a single video frame as input, and outputs a point cloud representing the coordinates of tracked pixels in the future frame. Potentially, the model will reconstruct future frames from the predicted point cloud.
 
 \subsection{Progress}\label{progress}
-
-\emph{{[}Briefly state your progress so far, as a bulleted list{]}}
-
-\subsection{Problems and risks}\label{problems-and-risks}
-
-\subsubsection{Problems}\label{problems}
-
-\emph{{[}What problems have you had so far, that have held up the
-project?{]}}
-
-\subsubsection{Risks}\label{risks}
-
-\emph{{[}What problems do you foresee in the future and how will you
-mitigate them?{]}}
-
-\subsection{Plan}\label{plan}
-
-\emph{{[}Time plan, in roughly weekly to monthly blocks, up until
-submission week{]}}
-
-    
-\subsection{Ethics and data}\label{ethics}
-\emph{Specify what ethical approval you need to do your evaluation and how you are approaching it. This is mandatory. 
-Specify what data you expect to collect in your evaluation. Explain how this data will help you evaluate your project.
-}
-
-Options for ethics:
-\item This project does not involve human subjects or data. No approval required.
-\item I have verified that the ethics checklist will apply to any evaluation I need to do. I will sign and complete the checklist.
-\item I have sought ethical guidance from the School's ethics convener and I will:
 \begin{itemize}
-    \item Proceed under specific instructions from the Ethics convener (e.g. modified checklist).
-    \item Apply for College Ethics Board approval.
-    \item Other procedure (give details)
+\itemsep0em
+    \item Dataset source chosen (YouTube-8M dataset) but the category might change.
+    \item Implemented tracking of pixels with PIPs.
+    \item Created pipelines for downloading videos.
+    and creating frames from YouTube-8M dataset, generating training data using PIPs and storing training data in Google Drive.
+    \item Defined dataset class structure to fit PyTorch Dataloader.
+    \item Created prediction neural network by modifying FCN Resnet50 semantic segmentation model.
 \end{itemize}    
 
+\subsection{Problems and risks}\label{problems-and-risks}
+\subsubsection{Problems}\label{problems}
+\begin{itemize}
+\itemsep0em
+    \item Performance of PIPs particle tracking was not as good as expected, especially on videos with homogeneous backgrounds, which has limited the choice of appropriate datasets.
+    \item Limited Colab GPU memory and Drive storage space.
+    \item Acquiring training data takes a significant amount of time.
+\end{itemize}   
+
+\subsubsection{Risks}\label{risks}
+\begin{itemize}
+\itemsep0em
+    \item Uncertain if the chosen dataset is appropriate both for prediction and PIPs - very small motion, too much noise in the data. \textbf{Mitigation:} Good automated pipeline to easily change to a different one.
+    \item Generating the whole training dataset will take a substantial amount of time and Colab has limited running time. \textbf{Mitigation:} Use university's stlinux servers with GPUs, generate training data in chunks.
+\end{itemize}  
+
+\subsection{Plan}\label{plan}
+\begin{itemize}
+\itemsep0em
+    \item \textbf{December}
+            \begin{itemize}
+                \itemsep0em
+                \item Add visibility of pixels into training data
+                \item Get a small training dataset (10 videos)
+                \item Fine-tune the prediction model on small dataset
+            \end{itemize}
+    \item \textbf{January}
+            \begin{itemize}
+                \itemsep0em
+                \item Acquiring the whole training dataset
+                \item Fine-tune the prediction model on the whole dataset
+                \item Evaluate the model
+            \end{itemize}
+    \item \textbf{February}
+            \begin{itemize}
+              \itemsep0em
+              \item Reconstruct the future frames
+              \item Figure out how to eliminate 'holes' introduced in the future frames
+            \end{itemize}
+    \item \textbf{March}
+            \begin{itemize}
+                \itemsep0em
+                \item Dissertation write up
+            \end{itemize}
+\end{itemize}
+
+\subsection{Ethics and data}\label{ethics}
+This project does not involve human subjects or data. No approval required.
 
 \end{document}
