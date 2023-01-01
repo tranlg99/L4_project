@@ -30,6 +30,8 @@ class TaiChiDataset(Dataset):
         sample_id = self.sample_names[idx]
         image0_path=os.path.join(self.root_dir,"frame0",sample_id)
         coords_path=os.path.join(self.root_dir,"coords",sample_id)
+	vis_path=os.path.join(self.root_dir,"vis",sample_id)
+	
         image0=np.load(image0_path+'.npy')
         coords= np.load(coords_path+'.npy')
 	vis=np.load(vis_path+'.npy')
