@@ -32,12 +32,15 @@ class TaiChiDataset(Dataset):
         coords_path=os.path.join(self.root_dir,"coords",sample_id)
         image0=np.load(image0_path+'.npy')
         coords= np.load(coords_path+'.npy')
-        sample={'id':sample_id,'image0':image0, 'coords':coords}
+	vis=np.load(vis_path+'.npy')
+        
 
         if self.check:
             image1_path=os.path.join(self.root_dir,"frame1",sample_id)
             image1=np.load(image1_path+'.npy')
-            sample={'id':sample_id, 'image0':image0, 'image1':image1, 'coords':coords}
+            sample={'id':sample_id, 'image0':image0, 'image1':image1, 'coords':coords, 'vis':vis}
+	else:
+	    sample={'id':sample_id,'image0':image0, 'coords':coords, 'vis':vis}
              
         if self.transform:
             sample = self.transform(sample)
@@ -51,17 +54,19 @@ class ToTensor(object):
     - torch image: C x H x W
     """
     def __call__(self, sample):
-        sample_id, image0, coords = sample['id'], sample['image0'], sample['coords']
+        sample_id, image0, coords, vis = sample['id'], sample['image0'], sample['coords'], sample['vis]
         image0 = image0.transpose((2, 0, 1))
 
-        if len(sample)==4:
+        if len(sample)==5:
             image1 = sample['image1']
             image1 = image1.transpose((2, 0, 1))
             return {'id': sample_id,
                     'image0': torch.from_numpy(image0),
                     'image1': torch.from_numpy(image1),
-                    'coords': torch.from_numpy(coords)}
+                    'coords': torch.from_numpy(coords),
+		    'vis': torch.from_numpy(vis)}
         else:
             return {'id': sample_id,
                     'image0': torch.from_numpy(image0),
-                    'coords': torch.from_numpy(coords)}
+                    'coords': torch.from_numpy(coords),
+		    'vis': torch.from_numpy(vis)}
