@@ -157,4 +157,22 @@
 * *2 hours* Status report draft
 * *2 hours* Looking into other potential datasets
 
+## Week 13-14
+### 01 Dec 2023
+* *5 hours* Adding visibility data to training dataset
+* *2 hours* Changing structure of training data to accommodate visibility and not generating samples that have already been generated
+
+### 02 Dec 2023
+* *2 hours* Choosing appropriate videos for training dataset
+* *4 hours* Creating dataset of 23 videos with visibility data
+
+### 05 Dec 2023
+* *2 hours* Showing visibility when plotting coords in dataloader.ipynb
+
+### 08 Dec 2023
+* *3 hours* Redefining prediction model for our data and splitting dataset into train and val
+
+### 09 Dec 2023
+* *2 hours* Reshaping coords and output to fit the model and computing loss correctly
+* *1 hours* Running first training and evaluating
 
