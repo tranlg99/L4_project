@@ -37,8 +37,8 @@ __Main objectives:__ implement PIPs model in Colab, test on different and longer
 
 * **Week 10**
 * **Week 11 [PROJECT WEEK]**
-  * Evaluate the prediction model
   * Work on status report
+  * Train model on initial small dataset
 * **Week 12 [PROJECT WEEK]** Status report submitted.
 
 ## Winter break
@@ -48,7 +48,9 @@ __Main objectives:__ implement PIPs model in Colab, test on different and longer
 __Main objectives:__ Figure out how to fill in "the gaps" in the predicted frames, dissertation
 
 * **Week 13**
+  * Add visibility data, overfit model to a smaller training data set
 * **Week 14**
+  * Sequence as model's input
 * **Week 15**
 * **Week 16**
 * **Week 17**
