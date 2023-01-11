@@ -169,10 +169,18 @@
 ### 05 Dec 2023
 * *2 hours* Showing visibility when plotting coords in dataloader.ipynb
 
-### 08 Dec 2023
+### 09 Dec 2023
 * *3 hours* Redefining prediction model for our data and splitting dataset into train and val
 
 ### 09 Dec 2023
 * *2 hours* Reshaping coords and output to fit the model and computing loss correctly
-* *1 hours* Running first training and evaluating
+* *1 hour* Running first training and evaluating
+
+### 10 Dec 2023
+* *1 hour* Creating a smaller dataset (2 videos) for the overfitting of the model
+
+### 11 Dec 2023
+* *0.5 hours* training the model on the smaller dataset
+* *0.5 hours* pre-meeting notes
+
 
