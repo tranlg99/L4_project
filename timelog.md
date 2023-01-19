@@ -187,4 +187,13 @@
 
 ## Week 15
 ### 16 Jan 2023
+* *1 hr* Trying an even smaller dataset (20 samples)
+
+### 18 Jan 2023
+* *2 hrs* Investigation of the prediction model, research about Batch Normalization
+* *0.5 hrs* Creating a dataset with one and two samples
+* *2 hrs* Adding normalization of input images to the model and debugging
+
+### 19 Jan 2023
+* *2 hrs* Plotting predictions and true coordinates during training
 
