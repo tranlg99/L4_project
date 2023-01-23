@@ -197,3 +197,11 @@
 ### 19 Jan 2023
 * *2 hrs* Plotting predictions and true coordinates during training
 
+### 20 Jan 2023
+* *1 hr* Change model predictions from absolute coordinates to displacement vectors
+
+## Week 16
+### 23 Jan 2023
+* *0.5 hrs* Meeting notes
+* *2 hrs* Investigating different losses (MSE, Huber, L1)
+* *2 hrs* Investigating different learning rates
