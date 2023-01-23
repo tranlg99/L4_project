@@ -17,6 +17,6 @@ More training epochs, experiment with different losses.
 
 ## Plan ##
 * experiment with different losses (Huber Loss)
-* add prediction for visibility (use BCE Loss)
+* add prediction for visibility (use BCE Loss, mask loss calculation of coordinates for invisible points)
 * add another frame by extending the channel dimension (need to duplicate weights, maybe allow to train weights in the first layer)
 * over-train the modified models -> scale up
