@@ -205,3 +205,18 @@
 * *0.5 hrs* Meeting notes
 * *2 hrs* Investigating different losses (MSE, Huber, L1)
 * *2 hrs* Investigating different learning rates
+
+### 26 Jan 2023
+* *4 hrs* Adding prediction of visibility
+
+### 25 Jan 2023
+* *1 hrs* Debugging prediction of visibility (needed to add sigmoid layer due to BCE loss)
+* *1 hrs* Meeting and meeting notes
+
+### 29 Jan 2023
+* *2 hrs* Adding masking of not visible points in the coords loss
+* *2 hrs* Normalising vis loss and coords loss, investigating performance
+
+## Week 16
+### 30 Jan 2023
+
