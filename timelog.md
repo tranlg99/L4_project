@@ -219,4 +219,19 @@
 
 ## Week 16
 ### 30 Jan 2023
+* *2 hrs* Adding masking of not visible points in the coords loss
+* *2 hrs* Normalising vis loss and coords loss, investigating performance
 
+### 01 Feb 2023
+* *2 hrs* Trying Adam optimizer with masking and normalisation
+
+### 02 Feb 2023
+* *1 hr* creating a sample dataset with two input frames, changing my custom dataloader
+* *1.5 hrs* creating a model that takes in two frames as input, copying weights
+
+### 03 Feb 2023
+* *2 hrs* trying adam vs sgd on two input model
+
+## Week 17
+### 06 Feb 2023
+* 2 hrs* double checking copying of weights is correct
