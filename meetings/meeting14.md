@@ -42,9 +42,9 @@ __Second frame__
 
 I compared performances of fine-tuning both first and last layer vs only last layer with both SGD/Adam optimizers.
 
-### Questions
-
 
 ## Plan ##
+* double check copying of weights is correct
+* try training all of the layers, try training second conv layer along with the first one - use SGD
 * further overfitting and tuning of hyper params (type of optimizer, num of epochs, lr)
 * scale up
