@@ -45,5 +45,9 @@ however the coords space have the resolution of the original image it was genera
 Hence, I have created input samples of the same resolution as the coordinated space, which seems to make much better predicitons.
 
 ## Plan ##
-* further overfitting and tuning of hyper params (type of optimizer, num of epochs, lr)
-* scale up
+* scale up - try around 10 frames (from one video and more videos)
+* later tuning of hyper params (type of optimizer, num of epochs, lr)
+* think about how to reconstruct frames for evaluation
+* make sure to store models for later evaluation
+* backgroung research and beginning of dissertation writing
+
