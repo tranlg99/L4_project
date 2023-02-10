@@ -235,3 +235,17 @@
 ## Week 17
 ### 06 Feb 2023
 * 2 hrs* double checking copying of weights is correct
+
+### 08 Feb 2023
+* *4 hrs* fine-tuning on different layers of the network and evaluating
+
+### 09 Feb 2023
+* *2 hrs* debugging, investigating spikes with lowering learning rates, gradient clipping
+* *2 hrs* feeding high resolution input to the model
+
+### 10 Feb 2023
+* *2 hrs* fine-tuning model with high res input on different layers
+* *1 hrs* supervisor meet and notes
+
+### 12 Feb 2023
+* 
