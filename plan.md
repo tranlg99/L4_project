@@ -53,10 +53,15 @@ __Main objectives:__ Figure out how to fill in "the gaps" in the predicted frame
   * Sequence as model's input
 * **Week 15**
 * **Week 16**
+  * Scaling up, reconstructing frames 
 * **Week 17**
+  * Evaluation
 * **Week 19**
+  * Disseration
 * **Week 20**
+  * Disseration
 * **Week 21**
+  * Disseration
 * **Week 22**
 * **Week 23 [TERM ENDS]**
 * **Week 24** Dissertation submission deadline and presentations.
