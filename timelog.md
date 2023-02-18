@@ -247,5 +247,29 @@
 * *2 hrs* fine-tuning model with high res input on different layers
 * *1 hrs* supervisor meet and notes
 
-### 12 Feb 2023
-* 
+## Week 18
+### 13 Feb 2023
+* *4 hrs* training models on 10, 15 frames
+* *1 hr* implementing checkpoints
+
+### 14 Feb 2023
+* *2 hrs* debugging, investigating spikes with lowering learning rates, gradient clipping
+* *2 hrs* feeding high resolution input to the model
+
+### 15 Feb 2023
+* *5 hrs* background research
+* *2 hr* full dataset generation
+
+### 16 Feb 2023
+* *3 hrs* reconstruction of frames using interpolation, trying on some coords
+* *3 hrs* generating full dataset
+
+### 17 Feb 2023
+* *2 hrs* checking dataset
+* *1 hr* supervisor meet, notes
+* * *1 hr* debug interpolation
+
+### 18 Feb 2023
+* *3 hrs* regenerating corrupted frames
+* *1 hr* exclude invisible notes from reconstrucion of frames
+
