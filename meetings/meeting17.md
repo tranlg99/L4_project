@@ -44,6 +44,9 @@ MSE on coords and classification accuracy on visuality
 
 for frame reconstructions: PSNR (peak signal-to-noise ratio) and SSIM (structural similarity)
 
+Use three different models: with no augmentation, with augmentation, with shifting+augmentation, with shifting
+Also two different training: train full network, finetune first two layers, and last layer, ...
+
 ## Plan ##
 * finish data augmentation+shifting in dataloader
 * train the models, will probably need more training epochs
