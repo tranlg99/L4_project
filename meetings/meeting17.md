@@ -34,12 +34,18 @@ __1. Is my shifting logic correct?__
 
 I am shifting both input frames and coords in dataloader (will make this random).
 
-This means I have to start calculating the loss on the whole model output rather than just the grid or store the x,y shifting values to pass to the model so it knows what output to take to calculate the loss.
+This means I have to store the x,y shifting values to pass to the model so it knows what output to take to calculate the loss.
 
 __2. How to evaluate?__
 
+Compare to dumb baseline - predict no displacement
+
+MSE on coords and classification accuracy on visuality
+
+for frame reconstructions: PSNR (peak signal-to-noise ratio) and SSIM (structural similarity)
 
 ## Plan ##
 * finish data augmentation+shifting in dataloader
-* train the model, will probably need more training epochs
-* dissertation: introduction and background, (analysis)
+* train the models, will probably need more training epochs
+* for better generalisation: check batchnorm is set to test, try drop out on the final layer?
+* dissertation: finish introduction and background, (analysis)
