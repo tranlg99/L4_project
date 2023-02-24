@@ -34,7 +34,7 @@ __1. Is my shifting logic correct?__
 
 I am shifting both input frames and coords in dataloader (will make this random).
 
-This means I have to start calculating the loss on the whole model output rather than just the grid or store the x,y shifting values to pass to the model so it knows where to calculate the loss.
+This means I have to start calculating the loss on the whole model output rather than just the grid or store the x,y shifting values to pass to the model so it knows what output to take to calculate the loss.
 
 __2. How to evaluate?__
 
