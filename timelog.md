@@ -267,9 +267,34 @@
 ### 17 Feb 2023
 * *2 hrs* checking dataset
 * *1 hr* supervisor meet, notes
-* * *1 hr* debug interpolation
+* *1 hr* debug interpolation, now using NN interpolation
 
 ### 18 Feb 2023
 * *3 hrs* regenerating corrupted frames
-* *1 hr* exclude invisible notes from reconstrucion of frames
+* *1 hr* exclude invisible points from reconstrucion of frames
+
+### 19 Feb 2023
+* *3 hrs* dissertation writing: introduction
+* *1 hr* training model on Colab
+* *2 hrs* reconstruction of frames using CT interpolation
+
+## Week 17
+### 20 Feb 2023
+* *3 hrs* training model on Colab
+
+### 21 Feb 2023
+* *2 hrs* dissertation writing: background
+
+### 22 Feb 2023
+* *5 hrs* setting up uni stlinux12 server, creating environment, downloading dataset, writing code for running the model
+* *2 hrs* training model
+
+### 23 Feb 2023
+* *2 hrs* training model 1 (without data augmentation) 200 epochs and visualisation of results
+* *2 hrs* data augmenation
+* *1 hr* dissertation writing: background
+
+### 24 Feb 2023
+* *2 hrs* data augmentation: shifting
+* *1 hr* supervisor meet
 
