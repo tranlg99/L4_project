@@ -298,3 +298,19 @@
 * *2 hrs* data augmentation: shifting
 * *1 hr* supervisor meet
 
+## Week 18
+### 27 Feb 2023
+* *2 hrs* traning models with data augmenetation and shifting
+
+### 28 Feb 2023
+* *2 hr* dissertation writing: introduction
+* *3 hrs* dissertation writing: background
+
+### 1 Feb 2023
+* *4 hrs* dissertation writing: background
+
+### 2 Feb 2023
+* *2 hrs* investigeting batchnorm and drop out
+* *2 hrs* loading model2, model3, model4 weights into colab and visualising 
+
+
