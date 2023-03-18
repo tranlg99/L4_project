@@ -306,11 +306,36 @@
 * *2 hr* dissertation writing: introduction
 * *3 hrs* dissertation writing: background
 
-### 1 Feb 2023
+### 1 Mar 2023
 * *4 hrs* dissertation writing: background
 
-### 2 Feb 2023
+### 2 Mar 2023
 * *2 hrs* investigeting batchnorm and drop out
 * *2 hrs* loading model2, model3, model4 weights into colab and visualising 
+
+## Week 19
+### 6 Mar 2023
+* *5 hrs* dissertation writing: analysis
+* *3 hrs* synthetic dataset
+
+### 8 Mar 2023
+* *5 hr* dissertation writing: implementation
+
+### 9 Mar 2023
+* *4 hrs* dissertation writing: background
+* *3 hrs* evaluation script
+
+## Week 21
+### 13 Mar 2023
+* *4 hrs* dissertation writing: implementation
+
+### 18 Mar 2023
+* *8 hrs* model training
+
+### 19 Mar 2023
+* *3 hrs* model evaluation
+
+## Week 22
+### 20 Mar 2023
 
 
