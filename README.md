@@ -3,7 +3,7 @@ This repository contains the code, dissertation and other deliverables of a Leve
 
 For more information about the project, including detailed methodology and experimental results, please refer to the dissertation[LINK] and presentation slides[LINK].
 
-## Oveview
+## Overview
 The repository is structured as follows:
 * `timelog.md` Time log of the project.
 * `plan.md` A week-by-week plan for the project. 
