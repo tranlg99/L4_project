@@ -1,22 +1,22 @@
-from __future__ import print_function, division
-import os
-import torch
-import numpy as np
-from torch.utils.data import Dataset, DataLoader
 import albumentations as A
+import cv2
+import os
+import numpy as np
+import torch
+from torch.utils.data import Dataset, DataLoader
 
 def get_dataloader(dataset, batch_size=16, shuffle=True):
   dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, num_workers=0)
   return dataloader
 
-class TaiChiDataset(Dataset):
-    """Tai Chi dataset."""
+class CustomDataset(Dataset):
+    """Our custom dataset."""
     def __init__(self,log_file,root_dir,check=False,transform=None):
         """
         Args: 
 		    log_file (string): path to txt file with all logged sample ids. 
 		    root_dir (string): Directory with all the image frames.
-        check (Bool): Also return 7th frames for sanity check.
+            check (Bool, optional): Also return 7th frames for sanity check.
 		    transform (callable, optional): Optional transform to be applied on a sample.
         """
         self.sample_names=open(log_file).read().splitlines()
@@ -36,6 +36,10 @@ class TaiChiDataset(Dataset):
 	
         image0=np.load(image0_path+'.npy')
         image3=np.load(image3_path+'.npy')
+        image0 = cv2.resize(image0, dsize=(640, 360))
+        image3 = cv2.resize(image3, dsize=(640, 360))
+
+
         coords= np.load(coords_path+'.npy')
         vis=np.load(vis_path+'.npy')
         
@@ -43,6 +47,7 @@ class TaiChiDataset(Dataset):
         if self.check:
             image7_path=os.path.join(self.root_dir,"frame7",sample_id)
             image7=np.load(image7_path+'.npy')
+            image7 = cv2.resize(image7, dsize=(640, 360))
             sample={'id':sample_id, 'image0':image0, 'image3':image3, 'image7':image7, 'coords':coords, 'vis':vis, 'shift':np.array((0,0))}
         else:
           sample={'id':sample_id, 'image0':image0, 'image3':image3, 'coords':coords, 'vis':vis, 'shift':np.array((0,0))}
@@ -62,6 +67,7 @@ class ToTensor(object):
         sample_id, image0, image3, coords, vis, shift = sample['id'], sample['image0'], sample['image3'], sample['coords'], sample['vis'], sample['shift']
         image0 = image0.transpose((2, 0, 1))
         image3 = image3.transpose((2, 0, 1))
+
 
         if len(sample)==7:
             image7 = sample['image7']
@@ -83,16 +89,16 @@ class ToTensor(object):
 
 class AugmentData(object):
     """
-    Augment data
+    Augment data with ColorJitter, Gaussian Noise and To Gray transformations.
     """
     def __call__(self, sample):
         sample_id, image0, image3, coords, vis, shift = sample['id'], sample['image0'], sample['image3'], sample['coords'], sample['vis'], sample['shift']
         
         trans = A.Compose(
             [
-             A.augmentations.transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2, always_apply=False, p=0.5),
+             A.augmentations.transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2, always_apply=False, p=0.2),
              A.augmentations.transforms.GaussNoise (var_limit=.05, mean=0, per_channel=True, always_apply=False, p=0.5),
-             A.augmentations.transforms.ToGray(p=0.2)
+             A.augmentations.transforms.ToGray(p=0.1)
              ],
             additional_targets={'image3': 'image'}
             )
@@ -111,24 +117,24 @@ class AugmentData(object):
                     'image3': n_image3,
                     'image7': image7,
                     'coords': coords,
-		                'vis': vis,
+		            'vis': vis,
                     'shift': shift}
         else:
             return {'id': sample_id,
                     'image0': n_image0,
                     'image3': n_image3,
                     'coords': coords,
-		                'vis': vis,
+		            'vis': vis,
                     'shift': shift}
 
 class ShiftData(object):
     """
-    Shifting data
+    Shifting data along random x, y axis.
     """
     def __call__(self, sample):
         sample_id, image0, image3, coords, vis, shift = sample['id'], sample['image0'], sample['image3'], sample['coords'], sample['vis'], sample['shift']
 
-        # randomly sample these values and pass to Affine trans (x in range (?,?), y in range (?,?)
+        # randomly sample these values and pass to Affine trans (x in range (-5,5), y in range (-10,10)
         random_x = np.random.randint(-5,5)
         random_y = np.random.randint(-10,10)
 
@@ -159,12 +165,12 @@ class ShiftData(object):
                     'image3': n_image3,
                     'image7': image7,
                     'coords': coords,
-		                'vis': vis,
+		            'vis': vis,
                     'shift': np.array(shift)}
         else:
             return {'id': sample_id,
                     'image0': n_image0,
                     'image3': n_image3,
                     'coords': coords,
-		                'vis': vis,
+		            'vis': vis,
                     'shift': np.array(shift)}
