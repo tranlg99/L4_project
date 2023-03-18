@@ -1,10 +1,13 @@
-import torch
 from datetime import datetime, date
 import numpy as np
+import torch
 
 def load_checkpoint(filename, device='cuda'):
+  """
+  Loading a checkpoint
+  """
   try:
-    filepath = "./checkpoints/"+filename
+    filepath = "../checkpoints/"+filename
     
     checkpoint = torch.load(filepath, map_location=device)
 
