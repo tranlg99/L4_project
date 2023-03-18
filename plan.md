@@ -52,16 +52,19 @@ __Main objectives:__ Figure out how to fill in "the gaps" in the predicted frame
 * **Week 14**
   * Sequence as model's input
 * **Week 15**
+  * Synthetic dataset
 * **Week 16**
   * Scaling up, reconstructing frames 
 * **Week 17**
-  * Evaluation
+  * Train model on full datasets
 * **Week 19**
-  * Disseration
+  * Evaluation
 * **Week 20**
-  * Disseration
+  * Disseration writeup
 * **Week 21**
-  * Disseration
+  * Disseration writeup
 * **Week 22**
+  * First draft of dissertation
 * **Week 23 [TERM ENDS]**
+  *  Presentation
 * **Week 24** Dissertation submission deadline and presentations.
