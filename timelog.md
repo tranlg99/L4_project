@@ -333,9 +333,10 @@
 * *8 hrs* model training
 
 ### 19 Mar 2023
-* *3 hrs* model evaluation
+* *3 hrs* models evaluation
 
 ## Week 22
 ### 20 Mar 2023
+* *3 hrs* dissertation writing: evaluation, conclusion
 
 
