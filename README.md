@@ -1,7 +1,7 @@
 # L4 Project: Particle-Based Video Prediction
 This repository contains the code, dissertation and other deliverables of a Level 4 University of Glasgow Computing Science project. The project aims to design and investigate the effectiveness of an end-to-end neural network in predicting the next frame in a video sequence, using a dataset with Persistent Independent Particles (PIPs) frame representations.
 
-For more information about the project, including detailed methodology and experimental results, please refer to the dissertation[LINK] and presentation slides[LINK].
+For more information about the project, including detailed methodology and experimental results, please refer to the dissertation.
 
 ## Overview
 The repository is structured as follows:
