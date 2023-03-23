@@ -4,11 +4,10 @@ Code consists of two folders: `l4proj/` and `colab_notebooks/`.
 
 `l4proj/` is source code used for training our models on University of Glasgow Linux servers.
 
-`colab_notebooks/` folder includes all python notebooks (training data generation, evaluation of models) and a `drive_folder` with all executables that should be copied into your Google Drive in order to successfully run the notebooks.
+`colab_notebooks/` folder includes all python notebooks (training data generation, evaluation of models) and executatbles.
 
 
 ## Run instructions
-
 
 ### Datasets
 #### Synthetic dataset download links
@@ -25,11 +24,10 @@ Code consists of two folders: `l4proj/` and `colab_notebooks/`.
 
 
 ### Run models
-
-Copy `drive_folder/` and put it in your Google Drive account.
-Run `.ipynb` files
+Use `colab_notebooks/run_models.ipynb` jupyter notebook. The script will download test datasets and all available models. Any specified model can be run on a given dataset. The model will output reconstructed frames.
 
 ### Train models
+To train models from scratch, clone `l4_proj/` directory and download necessary datasets. Run script `main.py` with specified dataset, number and number of epochs.
 
 
 ### Requirements
