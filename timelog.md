@@ -339,4 +339,8 @@
 ### 20 Mar 2023
 * *3 hrs* dissertation writing: evaluation, conclusion
 
+### 22 Mar 2023
+* *3 hrs* presentation preperation
+* *4 hrs* dissertation redrafting
+
 
