@@ -3,6 +3,8 @@ This repository contains the code, dissertation and other deliverables of a Leve
 
 For more information about the project, including detailed methodology and experimental results, please refer to the dissertation.
 
+Link to GitHub repository: https://github.com/tranlg99/L4_project
+
 ## Overview
 The repository is structured as follows:
 * `timelog.md` Time log of the project.
