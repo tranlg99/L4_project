@@ -5,13 +5,6 @@
 * 2472123T
 * Paul Henderson
 
-## Guidance
-
-* This file contains the time log for your project. It will be submitted along with your final dissertation.
-* **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
-* This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
-* Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
-
 ## Week 1
 * Project bidding 
 
@@ -333,14 +326,21 @@
 * *8 hrs* model training
 
 ### 19 Mar 2023
-* *3 hrs* models evaluation
+* *6 hrs* models evaluation
 
 ## Week 22
 ### 20 Mar 2023
 * *3 hrs* dissertation writing: evaluation, conclusion
 
+### 21 Mar 2023
+* *3 hrs* dissertation writing: evaluation, conclusion
+
 ### 22 Mar 2023
 * *3 hrs* presentation preperation
 * *4 hrs* dissertation redrafting
+
+### 23 Mar 2023
+* *3 hrs* presentation preperation
+* *3 hrs* preparing files for submission
 
 
